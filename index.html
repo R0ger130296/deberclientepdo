@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <h1>insertar Nuevo Cliente</h1>
+    <form method='POST' action="controlador/insertar.php">
+        <table  bordercolor=skyblue >
+            <tr>
+                <td>
+                    Nombre
+                </td>
+                <td>
+                    <input type="text" name="nombre">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    apellido
+                </td>
+                <td>
+                    <input type="text" name="apellido">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    cedula
+                </td>
+                <td>
+                    <input type="text" name="cedula">
+                </td>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        <input type="submit" value="guardar">
+                    </td>
+                </tr>
+        </table>
+    </form>
+    <div>
+        <a href="verclientes.php" >Ver  Clientes </a>
+       
+    </div>
+</body>
+</html>
