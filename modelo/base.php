@@ -30,4 +30,18 @@ class Base {
         }
         return $array;
     } 
+
+    public function eliminar($id){
+        $modelo= new Conexion();
+        $conexion=$modelo->get_conexion();
+        $sql="delete from cliente where id=:id";
+        $statement=$conexion->prepare($sql);
+        $statement->bindParam(':id',$id);
+        if(!$statement){
+            return "No se puede borrar";
+        }else{
+            $statement->execute();
+            return "El registro fue eliminado con exito";
+        }
+    }
 }

@@ -13,6 +13,7 @@ foreach($filas as $fila){
     echo "<td>".$fila['nombre']."</td>";    
     echo "<td>".$fila['apellido']."</td>";    
     echo "<td>".$fila['cedula']."</td>";      
+    echo"<td><a href='controlador/eliminar.php?id=".$fila['id']."'>eliminar</td>";
     echo"</tr>";
 }
    echo "</table>";
